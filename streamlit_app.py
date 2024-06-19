@@ -23,7 +23,7 @@ product_caption = 'Our warm, comfortable, ' + option + ' sweatsuit!'
 my_cur.execute("select direct_url, price, size_list, upsell_product_desc from catalog_for_website where color_or_style = '" + option + "';")
 df2 = my_cur.fetchone()
 streamlit.image(
-'@"ZENAS_ATHLEISURE_DB"."PRODUCTS"."SWEATSUITS"/red_sweatsuit.png',
+'s3://sfc-ca-ont-ds1-58-customer-stage/wjen0000-s/stages/da26d85d-1ff6-4bdd-b8d2-ea6a45545335/charcoal_grey_sweatsuit.png',
 width=400,
 caption= product_caption
 )
